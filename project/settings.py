@@ -141,3 +141,17 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = ('EMAIL_ID')   
 EMAIL_HOST_PASSWORD = ('EMAIL_PASSWORD')
+
+#signup for your aws account
+#set up new s3 bucket
+#set up nrw user in IAM
+#update settings.py file with aws credentials
+
+AWS_ACCESS_KEY_ID = ('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = ('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = ('AWS_STORAGE_BUCKET_NAME')
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
